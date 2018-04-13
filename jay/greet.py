@@ -1,10 +1,6 @@
-#!/usr/bin/python3
-import sys
+#Whatever the user enters is stored in a variable called ‘name’
+name = input("")
 
-if len(sys.argv) > 1:
-    name = sys.argv[1]
-else:
-    name = input("  ")
-    if name == '': name = ''
- 
-print ("What's up", name, )
+# Remember how we can use + to ‘add’ strings together?
+print("what's up " + name )
+
