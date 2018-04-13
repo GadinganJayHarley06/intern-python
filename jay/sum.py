@@ -1,7 +1,6 @@
-def listsum(numList):
-    theSum = 0
-    for i in numList:
-        theSum = theSum + i
-    return theSum
+def allsum_recursive(mylist):
+	if len(mylist) == 1:
+		return mylist[0]
+	return(mylist[0]+allsum_recursive(mylist[1:]))
 
-print(listsum([5,27,36,47,89]))
+print(allsum_recursive((50, 40, 3, 25, 25)))
