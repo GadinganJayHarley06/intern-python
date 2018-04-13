@@ -1,38 +1,28 @@
-class cal():
-    def __init__(self,a,b):
-        self.a=a
-        self.b=b
-    def add(self):
-        return self.a+self.b
-    def mul(self):
-        return self.a*self.b
-    def div(self):
-        return self.a/self.b
-    def sub(self):
-        return self.a-self.b
-a=int(input("Enter first number: "))
-b=int(input("Enter second number: "))
-obj=cal(a,b)
-choice=1
-while choice!=0:
-    print("0. Exit")
-    print("1. Add")
-    print("2. Subtract")
-    print("3. Multiply")
-    print("4. Divide")
-    choice=int(input("Enter choice: "))
-    if choice==1:
-        print("Result: ",obj.add())
-    elif choice==2:
-        print("Result: ",obj.sub())
-    elif choice==3:
-        print("Result: ",obj.mul())
-    elif choice==4:
-        print("Result: ",round(obj.div(),2))
-    elif choice==0:
-        print("well done")
-    else:
-        print("Invalid choice!!")
- 
- 
-print()
+number_1 = int(input('Enter your first number: '))
+operation = input('''
+Please type in the math operation you would like to complete:
++ for addition
+- for subtraction
+* for multiplication
+/ for division
+''')
+number_2 = int(input('Enter your second number: '))
+
+if operation == '+':
+    print('{} + {} = '.format(number_1, number_2))
+    print(number_1 + number_2)
+
+elif operation == '-':
+    print('{} - {} = '.format(number_1, number_2))
+    print(number_1 - number_2)
+
+elif operation == '*':
+    print('{} * {} = '.format(number_1, number_2))
+    print(number_1 * number_2)
+
+elif operation == '/':
+    print('{} / {} = '.format(number_1, number_2))
+    print(number_1 / number_2)
+
+else:
+    print('invalid operation.')
