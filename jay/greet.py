@@ -5,6 +5,6 @@ if len(sys.argv) > 1:
     name = sys.argv[1]
 else:
     name = input("  ")
-    if name == '': name = 'Monty'
+    if name == '': name = ''
  
 print ("What's up", name, )
